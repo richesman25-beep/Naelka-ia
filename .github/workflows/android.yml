@@ -30,7 +30,7 @@ jobs:
       - run: npm test
       - run: npm run build
       - run: npm run android:sync
-      - run: ./gradlew testDebugUnitTest assembleDebug
+      - run: ./gradlew testDebugUnitTest assembleDebug assembleDebugAndroidTest
         working-directory: android
       - uses: actions/upload-artifact@v6
         with:
