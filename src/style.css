@@ -1,0 +1,44 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #f2f3fa;
+  background: #0c101a;
+  color-scheme: dark;
+}
+
+body { margin: 0; }
+
+main {
+  min-height: 100svh;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 { margin: 1.5rem 0 0; }
+p { color: #bbc1d4; }
+
+.orb {
+  width: 5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #bdfff5, #468bcb 48%, #342770 75%);
+  box-shadow: 0 0 3rem #5086ba88;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .orb { animation: pulse 4s ease-in-out infinite alternate; }
+  @keyframes pulse { to { transform: scale(1.12); } }
+}
+
+button {
+  min-height: 48px;
+  padding: 0.65rem 1rem;
+  border: 1px solid #849ad2;
+  border-radius: 0.75rem;
+  background: #202b47;
+  color: inherit;
+  font: inherit;
+}

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">NAËLKA AI</string>
+    <string name="title_activity_main">NAËLKA AI</string>
+    <string name="package_name">app.naelka.assistant</string>
+    <string name="custom_url_scheme">app.naelka.assistant</string>
+</resources>
