@@ -30,6 +30,7 @@ jobs:
           log-accepted-android-sdk-licenses: false
       - run: npm ci
       - run: npm test
+      - run: npm run test:server
       - run: npm run build
       - run: npm run android:sync
       - run: ./gradlew :app:testDebugUnitTest :app:assembleDebug :app:assembleDebugAndroidTest
