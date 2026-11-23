@@ -46,7 +46,8 @@ function App() {
     try {
       const reply = await askGemini(endpoint, token.trim(), next, controller.signal);
       if (!controller.signal.aborted) {
-        setMessages([...next, { role: 'model', text: reply }].slice(-12));
+        const answer: Message = { role: 'model', text: reply };
+        setMessages([...next, answer].slice(-12));
         setDraft('');
       }
     } catch (cause) {
