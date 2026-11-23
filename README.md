@@ -24,7 +24,7 @@ npm test
 npm run build
 npm run android:sync
 cd android
-./gradlew testDebugUnitTest assembleDebug
+./gradlew :app:testDebugUnitTest :app:assembleDebug :app:assembleDebugAndroidTest
 ```
 
 Le workflow **Android APK** exécute les mêmes vérifications et publie l’artefact `naelka-debug`. Le fichier local se trouve à `android/app/build/outputs/apk/debug/app-debug.apk`.
